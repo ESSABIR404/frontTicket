@@ -1,0 +1,88 @@
+.slider {
+    position: relative;
+    background-image: url('../Home/img/backround2.svg');
+    height: 850px;
+    width: 100%;
+   
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  
+    .slide-image {
+      width:90%;
+      margin-left: 5%;
+      margin-top: 5%;
+      height: 500px;
+      max-height: 80%;
+      transition: opacity 0.5s ease-in-out;
+    }
+  
+    .navigation {
+      
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 200px;
+  
+      button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: rgba(223, 218, 218, 0.8);
+          color: black;
+        }
+      }
+  
+      .prev {
+        left: 10px;
+      }
+  
+      .next {
+        right: 10px;
+      }
+    }
+    @keyframes scroll {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+      
+      .t-Psection {
+        margin-top: 80px;
+        display: flex;
+        overflow: hidden;
+        height: 60px;
+        background-color: #ffffff07; /* Juste pour mieux visualiser le texte défilant */
+        position: relative; /* Assurez-vous que le contenu interne est positionné correctement */
+      
+        .scrolling-content {
+          display: flex;
+          white-space: nowrap; /* Empêche le texte de s'enrouler */
+          animation: scroll 45s linear infinite; /* Applique l'animation */
+        }
+      
+        p {
+          font-size: 18px;
+          color: #fff;
+          margin-right: 35px; /* Espace entre les textes */
+          margin-top: 22px;
+        }
+      
+        .rose {
+          color: #E63E6D;
+        }
+      }
+      
+  }
+  

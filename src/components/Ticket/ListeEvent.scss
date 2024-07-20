@@ -1,0 +1,225 @@
+.liste-event {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de se déplacer à la ligne si l'espace est insuffisant */
+    gap: 20px; /* Espacement entre les éléments */
+    justify-content: space-between;
+    padding: 0 5%; /* Espacement horizontal seulement */
+  
+    .event-item {
+      position: relative;
+      box-sizing: border-box;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      background-color: transparent;
+      transition: transform 0.3s ease;
+      width: 272px; /* Largeur fixe pour chaque élément */
+      
+      img {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      &:hover {
+        transform: scale(1.05); /* Agrandit légèrement l'élément au survol */
+      }
+  
+      &:hover img {
+        opacity: 0.3;
+      }
+  
+      .event-image {
+        width: 100%;
+        height: 285px;
+        background: transparent;
+        margin-top: 40px;
+      }
+  
+      .event-overlay {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        height: 110%;
+        background: transparent; /* Fond sombre semi-transparent */
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+  
+        .buy-button {
+          position: absolute;
+          top: -18px;
+          right: 20px;
+          width: 84px;
+          height: 32px;
+          background-color: #E63E6D;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-radius: 8px;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #e22259; /* Couleur de survol plus foncée */
+          }
+        }
+  
+        span {
+          color: #555555;
+          margin-top: 40px;
+          font-size: 18px;
+          margin-left: 20px;
+        }
+  
+        .event-title {
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          color: black;
+          margin-top: 20px;
+        }
+  
+        .event-price {
+          font-size: 26px;
+          margin-left: 50%;
+          font-weight: bold;
+          color: #E63E6D;
+        }
+  
+        .event-category {
+          background-color: #e22259;
+          border: 1px solid #e22259;
+          width: 132px;
+          height: 32px;
+          color: white;
+          font-size: 16px;
+          font-weight: bold;
+          margin-left: 26%;
+          margin-top: 25px;
+          font-family: "Inria Serif", serif;
+        }
+  
+        .event-location {
+          color: #555555;
+          margin-top: 15px;
+          font-size: 16px;
+          text-align: center;
+          font-weight: bold;
+        }
+  
+        .event-date {
+          color: black;
+          margin-top: 15px;
+          font-size: 16px;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+  
+      &:hover .event-overlay {
+        opacity: 1; /* Affiche la superposition lors du survol */
+      }
+    }
+  }
+  
+  .footer {
+    background-color: #B61340;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 120px;
+    border-top: 2px solid #ffffff;
+    height: 300px;
+  
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+  
+    .footer-logo img {
+      width: 100px;
+      height: auto;
+    }
+  
+    .footer-links,
+    .footer-contact,
+    .footer-newsletter,
+    .footer-social {
+      flex: 1;
+      margin: 10px;
+      min-width: 200px;
+    }
+  
+    h3 {
+      margin-bottom: 10px;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    li {
+      margin-bottom: 5px;
+    }
+  
+    a {
+      color: white;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    .footer-contact p,
+    .footer-newsletter p {
+      margin: 5px 0;
+    }
+  
+    .footer-newsletter form {
+      display: flex;
+      flex-direction: column;
+  
+      input {
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+  
+      button {
+        padding: 5px;
+        background-color: #E63E6D;
+        color: white;
+        border: none;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #C52C5B;
+        }
+      }
+    }
+  
+    .footer-social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      a {
+        margin: 5px;
+      }
+    }
+  
+    .footer-bottom {
+      margin-top: 20px;
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+  

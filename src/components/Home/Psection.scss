@@ -1,0 +1,117 @@
+.Psection{
+    height: 100%;
+   
+    .g-Psection{
+        display: flex;
+        margin-top: 5%;
+        padding-left: 6%;
+        padding-right: 6%;
+        margin-bottom: 20px;
+        .p-Psection{
+            width: 65%;
+            h1{
+                font-family: "Playfair Display", serif;
+                font-optical-sizing: auto;
+                font-weight: 600;
+                font-style: normal;
+                color: #ffff;
+                font-size: 80px;
+                line-height: 1.5;
+            }
+            .imgBut-Psection{
+                display: flex;
+                margin-top: 5%;
+                button{
+                    width: 120px;
+                    height: 50px;
+                    border-radius: 28px;
+                    border: none;
+                    margin-top: 20px;
+                    background-color: #E63E6D;
+                    color: #ffff;
+                    margin-left: 50px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #db2055;
+                    }
+                }
+            }
+        }
+            .d-Psection{
+                margin-top: 3%;
+                
+                .card-home{
+                    width: 280px;
+                    height: 480px;
+                    background-color: #ffff;
+                    border-radius: 28px;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                        .card-home-span{
+                            margin-top: 18px;
+                            width: 100%;
+                            display: inline-block;
+                            text-align: center;
+                            span{
+                                
+                                color: #E63E6D;
+                                
+                            }
+                        }
+                    
+                    h2{
+                        font-weight: 600;
+                        font-size: 28px;
+                        margin-top: 22px;
+                        line-height: 1.2;
+                    }
+                    p{
+                        margin-top: 20px;
+                        margin-left: 10px;
+                    }
+                    img{
+                        width: 280px;
+                        height: 280px;
+                        border-radius: 28px;
+                    }
+                }
+            }
+       
+    }
+    @keyframes scroll {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+      
+      .t-Psection {
+        margin-top: 25px;
+        display: flex;
+        overflow: hidden;
+        height: 60px;
+        background-color: #ffffff07; /* Juste pour mieux visualiser le texte défilant */
+        position: relative; /* Assurez-vous que le contenu interne est positionné correctement */
+      
+        .scrolling-content {
+          display: flex;
+          white-space: nowrap; /* Empêche le texte de s'enrouler */
+          animation: scroll 45s linear infinite; /* Applique l'animation */
+        }
+      
+        p {
+          font-size: 18px;
+          color: #fff;
+          margin-right: 35px; /* Espace entre les textes */
+          margin-top: 22px;
+        }
+      
+        .rose {
+          color: #E63E6D;
+        }
+      }
+      
+    
+}

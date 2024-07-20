@@ -1,0 +1,80 @@
+:root {
+    --main: #64c9cf;
+    --secondary: #fde49c;
+    --primary: #c32bad;
+    --accent: #ffb740;
+    --white: #fff;
+    --black: #000000;
+  }
+  .fixed-image {
+    background-image: url('./img/backround2.svg');
+    background-color: var(--black);
+    .inner {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+      padding-top: 120px;
+  
+      .image {
+        aspect-ratio: 16/9;
+        width: 100%;
+        overflow: hidden;
+        position: sticky;
+        top: 120px;
+        left: 50%;
+  
+        img {
+          width: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+      }
+  
+      .content {
+        display: flex;
+        color: #fff;
+        font-size: 24px;
+       
+  
+        p {
+          width: 50%;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+  
+  .pined {
+    overflow: hidden;
+    background-image: url('./img/backround2.svg');
+  
+    .pined-inner {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+  
+      .pined-list {
+        position: absolute;
+        left: 0;
+        display: flex;
+        gap: 60px;
+  
+        li {
+          width: 600px;
+          aspect-ratio: 16/9;
+          overflow: hidden;
+  
+          img {
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+  

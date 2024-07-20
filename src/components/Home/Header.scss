@@ -1,0 +1,53 @@
+header{
+    padding-left: 6%;
+    padding-right: 6%;
+    height: 70px;
+}
+    
+    .header-container{
+        display: flex;
+        
+    }
+    
+   
+    .nav-links{
+        display: flex;
+        margin-top: 2.5%;
+        
+        color: #ffff;
+        gap: 20px;
+        a{
+            text-decoration: none;
+            color: #ffff;
+            cursor: pointer;
+            &:hover{
+                color: #E63E6D;
+            }
+        }
+        .rose{
+            color: #E63E6D;
+            font-weight: 600;
+        }
+    }
+    .logo-container{
+        margin-top: 2%;
+        margin-left: 18%;
+
+    }
+    .shop-icon-container {
+    cursor: pointer;
+    position: relative;
+    margin-top: 1.8%;
+    margin-left: 40%;
+    .shop-icon2 {
+        display: none;
+    }
+
+    &:hover .shop-icon {
+        display: none;
+    }
+
+    &:hover .shop-icon2 {
+        display: block;
+    }
+}

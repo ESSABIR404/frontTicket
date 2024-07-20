@@ -1,0 +1,78 @@
+.Dsection {
+  background-image: url('./img/backround2.svg');
+  padding-top: 120px;
+  padding-bottom: 250px;
+
+  h1 {
+    color: #fff;
+    text-align: center;
+  }
+
+  .slider-home {
+    margin-top: 10%;
+
+    .card-slider-home {
+      position: relative;
+      padding-left: 12%;
+      padding-right: 12%;
+      
+      img {
+        width: 250px;
+        height: 308px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+        opacity: 0.5;
+      }
+
+      .buy-button {
+        position: absolute;
+        top: 70%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        display: none;
+        background-color: #E63E6D;
+        color: #fff;
+        border: none;
+        padding: 17px 45px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: opacity 0.3s ease;
+        &:hover  {
+        
+          background-color: #d33260;
+        }
+      }
+
+      &:hover .buy-button {
+        display: block;
+    
+      }
+    }
+
+    .slick-dots {
+      bottom: -150px;
+
+      button:before {
+        color: #fff;
+        width: 15px;
+        font-size: 15px;
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      color: #fff;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 30px;
+    }
+  }
+}
